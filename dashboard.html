@@ -1,0 +1,115 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketSmart AI - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <h1>💰 PocketSmart AI</h1>
+            <p>Smart Budget Dashboard</p>
+        </div>
+
+        <button type="button" class="small-button" onclick="goHome()">
+            Home
+        </button>
+    </header>
+
+
+    <!-- SUMMARY -->
+    <div class="summary">
+
+        <div class="card">
+            <h3>💵 Balance</h3>
+            <h2 id="balance">₹0</h2>
+        </div>
+
+        <div class="card">
+            <h3>📈 Income</h3>
+            <h2 id="income">₹0</h2>
+        </div>
+
+        <div class="card">
+            <h3>📉 Expenses</h3>
+            <h2 id="expenses">₹0</h2>
+        </div>
+
+    </div>
+
+
+    <!-- ACTION BUTTONS -->
+    <div class="actions">
+
+        <button type="button" onclick="addIncome()">
+            ➕ Add Income
+        </button>
+
+        <button type="button" onclick="addExpense()">
+            ➖ Add Expense
+        </button>
+
+    </div>
+
+
+    <!-- TRANSACTIONS -->
+    <div class="section">
+
+        <h2>📋 Recent Transactions</h2>
+
+        <div id="transactionList">
+            <p class="empty">
+                No transactions yet.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- BUDGET -->
+    <div class="section">
+
+        <h2>🎯 Monthly Budget</h2>
+
+        <h3 id="budgetText">Budget: ₹0</h3>
+
+        <p id="budgetStatus">
+            Set your monthly budget.
+        </p>
+
+        <button type="button" onclick="setBudget()">
+            Set Budget
+        </button>
+
+    </div>
+
+
+    <!-- AI RECOMMENDATION -->
+    <div class="section ai">
+
+        <h2>🤖 AI Recommendation</h2>
+
+        <p id="recommendation">
+            Add your income and expenses to get
+            smart recommendations.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
+```
